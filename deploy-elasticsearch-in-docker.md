@@ -40,3 +40,5 @@ services:
 Reference:
 
 - [docker-elasticsearch](https://github.com/elastic/dockerfiles/tree/7.5/elasticsearch)
+
+- [Install Elasticsearch with Docker](https://www.elastic.co/guide/en/elasticsearch/reference/7.5/docker.html)
