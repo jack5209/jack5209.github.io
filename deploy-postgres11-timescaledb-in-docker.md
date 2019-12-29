@@ -22,6 +22,8 @@ services:
       - /var/lib/postgresql/data:/var/lib/postgresql/data
 ```
 
+[github](https://github.com/jack5209/timescaledb-docker)
+
 Reference:
 
 - [timescaledb-docker](https://github.com/timescale/timescaledb-docker)
