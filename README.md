@@ -4,4 +4,4 @@
 
 - [使用Docker部署Postgres11+Timescaledb](https://jack5209.github.io/deploy-postgres11-timescaledb-in-docker)
 
-- [使用Docker部署elasticsearch](https://jack5209.github.io/deploy-elasticsearch-in-docker.md)
+- [使用Docker部署elasticsearch](https://jack5209.github.io/deploy-elasticsearch-in-docker)
