@@ -1,6 +1,8 @@
 ## Multiple SSH Keys settings for different github account(在单台电脑上使用多个github账号)
 
 ```zsh
+vi .ssh/config
+
 # jack5209 GitHub account
 Host github.com
  HostName github.com
