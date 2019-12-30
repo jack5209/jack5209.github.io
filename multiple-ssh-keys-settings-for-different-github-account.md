@@ -1,6 +1,6 @@
-## Multiple SSH Keys settings for different github account(在单台电脑上使用多个github账号)
+## 在单台电脑上使用多个github账号
 
-### create different public key
+### Multiple SSH Keys settings for different github account
 create different ssh key
 
 `ssh-keygen -t rsa -C "jack5209@youremail.com"`
