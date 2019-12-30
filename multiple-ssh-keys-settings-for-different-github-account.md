@@ -1,5 +1,30 @@
 ## Multiple SSH Keys settings for different github account(在单台电脑上使用多个github账号)
 
+### create different public key
+create different ssh key
+
+`ssh-keygen -t rsa -C "your_email@youremail.com"`
+
+for example, new key created at:
+
+`~/.ssh/id_rsa_jack5209`
+
+then, add the new key as following
+
+`ssh-add ~/.ssh/id_rsa_jack5209`
+
+you can delete all cached keys before
+
+`$ ssh-add -D`
+
+finally, you can check your saved key
+
+`$ ssh-add -l`
+
+### Modify the ssh config
+
+Then added
+
 ```zsh
 vi .ssh/config
 
@@ -20,17 +45,22 @@ download github repo use jack5209 GitHub account
 
 `git clone git@github.com:jack5209/project.git`
 
-download github repo use link5209 GitHub account
+### Clone you repo use different account and modify your Git config
 
-`git clone git@github.com-link5209:link5209/project.git`
+```zsh
+git clone git@github.com-link5209:link5209/project.git
+git config user.name "jack5209"
+git config user.email "jack5209@gmail.com"
+```
 
-```sh
+see the difference in url:
+
+```zsh
 vi .git/config
-...
+
 [remote "origin"]
     url = git@github.com-link5209:link5209/shopee.git
     fetch = +refs/heads/*:refs/remotes/origin/*
-...
 ```
 
 Reference: [Multiple SSH Keys settings for different github account](https://gist.github.com/jexchan/2351996)
