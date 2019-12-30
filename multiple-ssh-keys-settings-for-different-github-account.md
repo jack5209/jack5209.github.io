@@ -41,10 +41,6 @@ Host github.com-link5209
  IdentityFile ~/.ssh/id_rsa
 ```
 
-download github repo use jack5209 GitHub account
-
-`git clone git@github.com:jack5209/project.git`
-
 ### Clone you repo use different account and modify your Git config
 
 ```zsh
