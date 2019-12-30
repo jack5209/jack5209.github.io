@@ -3,7 +3,7 @@
 ### create different public key
 create different ssh key
 
-`ssh-keygen -t rsa -C "your_email@youremail.com"`
+`ssh-keygen -t rsa -C "jack5209@youremail.com"`
 
 for example, new key created at:
 
@@ -29,13 +29,13 @@ Then added
 vi .ssh/config
 
 # jack5209 GitHub account
-Host github.com
+Host github-jack5209.com
  HostName github.com
  User git
  IdentityFile ~/.ssh/id_rsa_jack5209
 
-# link5209 GitHub account
-Host github.com-link5209
+# default GitHub account
+Host github.com
  HostName github.com
  User git
  IdentityFile ~/.ssh/id_rsa
@@ -44,7 +44,7 @@ Host github.com-link5209
 ### Clone you repo use different account and modify your Git config
 
 ```zsh
-git clone git@github.com-link5209:link5209/project.git
+git clone git@github.com-jack5209:jack5209/project.git
 git config user.name "jack5209"
 git config user.email "jack5209@gmail.com"
 ```
@@ -55,7 +55,7 @@ see the difference in url:
 vi .git/config
 
 [remote "origin"]
-    url = git@github.com-link5209:link5209/shopee.git
+    url = git@github.com-jack5209:jack5209/project.git
     fetch = +refs/heads/*:refs/remotes/origin/*
 ```
 
